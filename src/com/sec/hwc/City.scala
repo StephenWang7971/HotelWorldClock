@@ -2,13 +2,6 @@ package com.sec.hwc
 
 import java.util.{Calendar, Date}
 
-/**
- * Created with IntelliJ IDEA.
- * User: wanghongliang
- * Date: 13-9-12
- * Time: 上午8:29
- * To change this template use File | Settings | File Templates.
- */
 class City(n : String, tz : Int, dst : DaylightSavingTime) {
 
   val name : String = n;

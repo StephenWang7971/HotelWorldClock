@@ -2,13 +2,6 @@ package com.sec.hwc
 
 import java.util.{Calendar, Date}
 
-/**
- * Created with IntelliJ IDEA.
- * User: wanghongliang
- * Date: 13-9-12
- * Time: 上午8:38
- * To change this template use File | Settings | File Templates.
- */
 class DaylightSavingTime (f : Date, t : Date) {
   val from : Date = f;
   val to : Date = t;
