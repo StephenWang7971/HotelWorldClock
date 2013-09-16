@@ -5,19 +5,9 @@ import java.text.SimpleDateFormat
 
 object TimeServerObject {
 
-  def getDate(date : String ) : Date = {
-    val sdf : SimpleDateFormat  = new SimpleDateFormat("MM-dd");
-    return sdf.parse(date);
-  }
-
-  def getTime(date : String ) : Date = {
-    val sdf : SimpleDateFormat  = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-    return sdf.parse(date);
-  }
-
   val beijing : City = new City("Beijing", 8, null);
-  val london : City = new City("London", 0, new DaylightSavingTime(getDate("03-31"), getDate("10-27")));
-  val newYork : City = new City("New York", -5, new DaylightSavingTime(getDate("03-10"), getDate("10-03")));
+  val london : City = new City("London", 0, new DaylightSavingTime(Util.getDate("03-31"), Util.getDate("10-27")));
+  val newYork : City = new City("New York", -5, new DaylightSavingTime(Util.getDate("03-10"), Util.getDate("10-03")));
   val moscow : City = new City("Moscow", 4, null);
   val sydney : City = new City("Sydney", 10, null);
   val tokyo : City =  new City("Tokyo", 9, null);
