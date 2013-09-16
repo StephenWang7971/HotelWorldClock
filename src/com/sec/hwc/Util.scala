@@ -10,7 +10,7 @@ object Util {
   }
 
   def getTime(date : String ) : Date = {
-    val sdf : SimpleDateFormat  = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+    val sdf : SimpleDateFormat  = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     return sdf.parse(date);
   }
 }

@@ -7,8 +7,8 @@ abstract class TimeServer {
   var time : Date;
 
   def adjustTime(t : Date) {
-    println("==========================================");
-    println("Adjust server time to : " + t);
+    //println("==========================================");
+    //println("Adjust server time to : " + t);
     time = t;
     notifyCities();
   }

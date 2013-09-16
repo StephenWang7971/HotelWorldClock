@@ -10,8 +10,8 @@ class City(n : String, tz : Int, dst : DaylightSavingTime) {
   var time : Date = new Date();
 
   def correctTime(time : Date) {
-    println("==============================================");
-    println("CORRECT CITY TIME of " + name + " to " + time);
+    //println("==============================================");
+    //println("CORRECT CITY TIME of " + name + " to " + time);
     var serverTime : Date = adjustTimeInverse(time);
     TimeServerObject.server.adjustTime(serverTime);
   }
@@ -36,7 +36,7 @@ class City(n : String, tz : Int, dst : DaylightSavingTime) {
        t = daylightSavingTime.adjustTime(serverTime);
     }
     this.time = adjustTime(t);
-    println(this.name + " is now adjusted to : " + time);
+    //println(this.name + " is now adjusted to : " + time);
   }
 
 }
