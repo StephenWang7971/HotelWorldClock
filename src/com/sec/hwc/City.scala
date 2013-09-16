@@ -30,7 +30,7 @@ class City(n : String, tz : Int, dst : DaylightSavingTime) {
     return calendar.getTime;
   }
 
-  def synchTime(serverTime : Date) {
+  def syncTime(serverTime : Date) {
     var t : Date = serverTime;
     if (daylightSavingTime != null) {
        t = daylightSavingTime.adjustTime(serverTime);

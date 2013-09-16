@@ -14,6 +14,6 @@ abstract class TimeServer {
   }
 
   def notifyCities() {
-    cities.foreach((city:City) => city.synchTime(time))
+    cities.foreach((city:City) => city.syncTime(time))
   }
 }
