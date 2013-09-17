@@ -2,20 +2,20 @@ package com.sec.hwc
 
 import java.util.{Calendar, Date}
 
-class DaylightSavingTime (f : Date, t : Date) {
-  val from : Date = f;
-  val to : Date = t;
+class DaylightSavingTime(f: Date, t: Date) {
+  val from: Date = f;
+  val to: Date = t;
 
-  def adjustTime(time : Date) : Date = {
+  def adjustTime(time: Date): Date = {
 
-    val calendar : Calendar = Calendar.getInstance();
+    val calendar: Calendar = Calendar.getInstance();
     calendar.setTime(time);
 
-    val fromCal : Calendar = Calendar.getInstance();
+    val fromCal: Calendar = Calendar.getInstance();
     fromCal.setTime(from);
     fromCal.set(Calendar.YEAR, calendar.get(Calendar.YEAR));
 
-    val toCal : Calendar = Calendar.getInstance();
+    val toCal: Calendar = Calendar.getInstance();
     toCal.setTime(to);
     toCal.set(Calendar.YEAR, calendar.get(Calendar.YEAR));
 

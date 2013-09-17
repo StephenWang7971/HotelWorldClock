@@ -2,7 +2,7 @@ package com.sec.hwc
 
 object Client {
 
-  def main(args:Array[String]) {
+  def main(args: Array[String]) {
 
     TimeServerObject.server.adjustTime(Util.getTime("2013-01-13 00:00:00"));
     TimeServerObject.server.adjustTime(Util.getTime("2013-01-13 09:00:00"));
